@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="15" xmlns="http://javafx.com/javafx/10"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="root"
+      fx:controller="org.game.game.ui.controllers.NewRecordController"
+      style="-fx-padding: 20; -fx-border-width: 2; -fx-border-color: lightgray; -fx-border-radius: 10; -fx-background-color: #f2f2f2; -fx-background-radius: 10;">
+
+    <Label text="Новый рекорд!"
+           style="-fx-font-size: 22; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+    <Label text="Введите своё имя и сохраните результат!"
+           style="-fx-font-size: 14; -fx-text-fill: #666;" />
+
+    <TextField fx:id="nameField" promptText="Ваше имя" maxWidth="250"
+               style="-fx-padding: 5; -fx-border-color: lightgray; -fx-border-width: 1; -fx-border-radius: 5; -fx-background-radius: 5;" />
+
+    <Button fx:id="saveButton" text="Сохранить" onAction="#onSave"
+            style="-fx-background-color: #4caf50; -fx-text-fill: white; -fx-font-size: 14; -fx-font-weight: bold; -fx-padding: 10 20; -fx-background-radius: 5;" />
+</VBox>

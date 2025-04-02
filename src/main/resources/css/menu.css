@@ -1,0 +1,55 @@
+.root {
+    -fx-background-image: url("../images/back.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.menu-title {
+    -fx-font-size: 100px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(#FFD700, #FFA500);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 5, 0.5, 0, 2);
+    -fx-padding: 10;
+    -fx-underline: true;
+}
+
+.menu-buttons {
+    -fx-spacing: 15;
+    -fx-padding: 10;
+}
+
+.menu-button {
+    -fx-background-color: linear-gradient(#FF6347, #FF4500);
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Black";
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+    -fx-padding: 10 25;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 2, 2);
+    -fx-cursor: hand;
+    -fx-transition: 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+    -fx-background-color: linear-gradient(#FFA07A, #FF6347);
+    -fx-text-fill: #FFD700;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(255, 165, 0, 0.75), 15, 0, 3, 3);
+}
+
+.menu-button:pressed {
+    -fx-background-color: linear-gradient(#CD5C5C, #8B0000);
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+}
+
+.glow-effect {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 255, 0.5), 20, 0.5, 0, 0);
+}

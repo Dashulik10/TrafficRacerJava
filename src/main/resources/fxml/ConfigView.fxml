@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="20"
+      prefWidth="400" prefHeight="400"
+      fx:controller="org.game.game.ui.controllers.LevelController">
+
+    <Label text="Выберите уровень сложности" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <RadioButton fx:id="noTrafficRadio" text="Без встречного движения" userData="NO_TRAFFIC" />
+    <RadioButton fx:id="withTrafficRadio" text="Со встречным движением" userData="WITH_TRAFFIC" />
+    <RadioButton fx:id="timeChallengeRadio" text="На время" userData="TIME_CHALLENGE" />
+
+    <Button fx:id="selectCarButton" text="Выбрать машину" onAction="#handleSelectCar"/>
+    <Label fx:id="selectedCarLabel" text="Легковая (по умолчанию)" styleClass="label-selected"/>
+
+    <Button fx:id="selectColorButton" text="Выбрать цвет" onAction="#handleSelectColor"/>
+    <Label fx:id="selectedColorLabel" text="Синий (по умолчанию)"/>
+
+    <HBox alignment="CENTER" spacing="10">
+        <Button text="Начать игру" onAction="#handleAccept" />
+        <Button text="Отмена" onAction="#handleCancel" />
+    </HBox>
+
+</VBox>

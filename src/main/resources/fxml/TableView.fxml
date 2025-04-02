@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.game.game.ui.controllers.TableController"
+      alignment="CENTER"
+      style="-fx-background-color: #000000;"
+      prefHeight="400.0" prefWidth="600.0">
+
+    <TableView fx:id="recordsTable" maxWidth="330" maxHeight="250">
+        <columns>
+            <TableColumn fx:id="playerColumn" text="Player" />
+            <TableColumn fx:id="scoreColumn" text="Score" />
+            <TableColumn fx:id="gameModeColumn" text="Game Mode" />
+        </columns>
+    </TableView>
+
+    <Button text="Назад"
+            onAction="#handleBack"
+            styleClass="button" />
+</VBox>

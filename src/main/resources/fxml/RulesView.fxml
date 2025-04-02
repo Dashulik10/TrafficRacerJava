@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.game.game.ui.controllers.HelpRulesController"
+            prefHeight="700" prefWidth="1200">
+
+    <top>
+        <Label text="Справочная информация"
+               styleClass="help-title"
+               BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" styleClass="rules-scroll-pane" prefHeight="400">
+            <VBox alignment="TOP_CENTER"
+                  spacing="20"
+                  styleClass="rules-container">
+
+                <VBox alignment="TOP_LEFT" spacing="10">
+                    <Label text="Цель игры:" styleClass="rules-header" />
+                    <Label text="Управлять автомобилем, маневрируя среди трафика, чтобы набрать максимальное количество очков и проехать как можно дальше."
+                           styleClass="rules-item" />
+                </VBox>
+
+                <VBox alignment="TOP_LEFT" spacing="10">
+                    <Label text="Управление:" styleClass="rules-header" />
+                    <Label text="• Стрелки клавиатуры — поворот влево/вправо."
+                           styleClass="rules-item" />
+                    <Label text="• Ускорение — удерживание кнопки вверх."
+                           styleClass="rules-item" />
+                    <Label text="• Торможение — нажатие на кнопку вниз."
+                           styleClass="rules-item" />
+                </VBox>
+
+                <VBox alignment="TOP_LEFT" spacing="10">
+                    <Label text="Режимы игры:" styleClass="rules-header" />
+                    <Label text="• Базовый: Безлимит времени до аварии, без встречки." styleClass="rules-item" />
+                    <Label text="• Движение против шерсти: Движение против потока транспорта с повышенным риском, но больше очков."
+                           styleClass="rules-item" />
+                    <Label text="• Режим на время: Проехать максимальное расстояние за ограниченное время."
+                           styleClass="rules-item" />
+                </VBox>
+
+                <VBox alignment="TOP_LEFT" spacing="10">
+                    <Label text="Система очков:" styleClass="rules-header" />
+                    <Label text="• Движение на высокой скорости (более 100 км/ч) — бонусные очки."
+                           styleClass="rules-item" />
+                    <Label text="• Езда по встречной полосе — двойные очки." styleClass="rules-item" />
+                </VBox>
+
+
+                <VBox alignment="TOP_LEFT" spacing="10">
+                    <Label text="Трафик и препятствия:" styleClass="rules-header" />
+                    <Label text="• Случайно генерируемый поток транспорта, включая легковые автомобили, грузовики."
+                           styleClass="rules-item" />
+                </VBox>
+
+                <VBox alignment="TOP_LEFT" spacing="10">
+                    <Label text="Система жизней:" styleClass="rules-header" />
+                    <Label text="• При окончании жизней игра заканчивается." styleClass="rules-item" />
+                </VBox>
+
+                <VBox alignment="TOP_LEFT" spacing="10">
+                    <Label text="Конец игры:" styleClass="rules-header" />
+                    <Label text="• Игра заканчивается при завершении при столкновении."
+                           styleClass="rules-item" />
+                    <Label text="• Очки сохраняются, и игрок может попытаться побить свой рекорд."
+                           styleClass="rules-item" />
+                </VBox>
+
+            </VBox>
+        </ScrollPane>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER">
+            <Button text="Назад"
+                    onAction="#handleBackToMenu"
+                    styleClass="back-button"
+                    BorderPane.alignment="CENTER" />
+        </VBox>
+    </bottom>
+</BorderPane>

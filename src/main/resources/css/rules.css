@@ -1,0 +1,67 @@
+.root {
+    -fx-background-image: url("../images/rules.gif");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.help-title {
+    -fx-font-size: 60px;
+    -fx-font-weight: bold;
+    -fx-text-fill: linear-gradient(#FFD700, #FFA500);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 5, 0.5, 0, 2);
+    -fx-padding: 10;
+    -fx-underline: true;
+}
+
+.rules-container {
+    -fx-spacing: 15;
+    -fx-padding: 25;
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.rules-item {
+    -fx-font-size: 18px;
+    -fx-text-fill: #FFD700;
+    -fx-wrap-text: true;
+    -fx-padding: 10;
+}
+
+.back-button {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(#FF7F50, #FF4500);
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 2, 2);
+}
+
+.back-button:hover {
+    -fx-background-color: linear-gradient(#FFA07A, #FF6347);
+    -fx-text-fill: #FFD700;
+}
+
+.rules-header {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD700;
+    -fx-padding: 10 0;
+}
+
+.rules-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-padding: 0;
+}
+
+ScrollPane .viewport {
+    -fx-background-color: transparent;
+}

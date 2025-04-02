@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-padding: 30; -fx-background-color: #f4f4f4;"
+      fx:controller="org.game.game.ui.controllers.SelectColorController">
+
+    <Label text="Выберите цвет:"
+           style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 10;">
+        <ImageView fx:id="colorOne" fitHeight="100" fitWidth="100" preserveRatio="true"
+                   style="-fx-border-color: gray; -fx-border-radius: 8; -fx-background-radius: 10;" />
+        <ImageView fx:id="colorTwo" fitHeight="100" fitWidth="100" preserveRatio="true"
+                   style="-fx-border-color: gray; -fx-border-radius: 8; -fx-background-radius: 10;" />
+        <ImageView fx:id="colorThree" fitHeight="100" fitWidth="100" preserveRatio="true"
+                   style="-fx-border-color: gray; -fx-border-radius: 8; -fx-background-radius: 10;" />
+        <ImageView fx:id="colorFour" fitHeight="100" fitWidth="100" preserveRatio="true"
+                   style="-fx-border-color: gray; -fx-border-radius: 8; -fx-background-radius: 10;" />
+        <ImageView fx:id="colorFive" fitHeight="100" fitWidth="100" preserveRatio="true"
+                   style="-fx-border-color: gray; -fx-border-radius: 8; -fx-background-radius: 10;" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER" style="-fx-padding: 20 0 0 0;">
+        <Button text="Отмена"
+                fx:id="cancelButton"
+                onAction="#handleCancel"
+                style="-fx-background-color: #ffcccc; -fx-text-fill: #333; -fx-font-size: 14px; -fx-border-radius: 5; -fx-background-radius: 5;" />
+    </HBox>
+
+</VBox>
